@@ -15,7 +15,7 @@ public class Contact {
         this.messages = messages;
     }
 
-    //constructor for new contacts
+    //constructor for new contacts/without messages
     public Contact(String name, String number, String email) {
         this.name = name;
         this.number = number;
@@ -23,6 +23,13 @@ public class Contact {
         this.messages = new ArrayList<>();
     }
 
+
+        //get details
+    public void getDetails(){
+        System.out.println("Name: " + this.name + "" +
+                "\nNumber: " + this.number + "" +
+                "\nEmail: " + this.email);
+    }
 
     public String getName() {
         return name;
