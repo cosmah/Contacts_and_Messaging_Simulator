@@ -85,6 +85,7 @@ public class Main {
                        if (c.getName().equals(name)){
                            ArrayList<Message> newMessages = c.getMessages();
                            newMessages.add(newMessage);
+                           c.setMessages(newMessages);
                        }
                    }
                }
@@ -92,6 +93,7 @@ public class Main {
                System.out.println("There is no such contact");
            }
         }
+        showInitialOptions();
     }
 
     private static void showAllMessages() {
@@ -183,6 +185,7 @@ public class Main {
                 System.out.println("There is no such contact in your phone");
                 showInitialOptions();
             }
+            showInitialOptions();
         }
     }
 
